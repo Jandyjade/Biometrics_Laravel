@@ -10,4 +10,7 @@ Route::get('/enroll', [BiometricAuthController::class, 'showEnrollmentForm'])->n
 Route::post('/register-fingerprint', [BiometricAuthController::class, 'registerFingerprint'])->name('biometric.register');
 Route::post('/authenticate-fingerprint', [BiometricAuthController::class, 'authenticateFingerprint'])->name('biometric.authenticate');
 
+Route::post('/enroll', [BiometricController::class, 'enrollUser']);
+Route::post('/authenticate', [BiometricController::class, 'authenticateUser']);
+
 });
