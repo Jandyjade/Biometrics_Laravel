@@ -1,0 +1,5 @@
+{
+    "require": {
+        "laranex/laravel-biometric-auth": "^2.0"
+    }
+}
